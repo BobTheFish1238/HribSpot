@@ -1,7 +1,7 @@
 # HribSpot
 Quickly save mushroom species, quantity, and location while foraging offline
 
-App made with tasker: <a https://taskernet.com/shares/?user=AS35m8lAGpgBQ83OXLWZDvG6p8apkrN%2F1fP55SfSMPnL9nfjqOB6XzKERt34IoSd%2FTwoHVexw1ep&id=Project%3AHribSpot">HribSpot taskernet.com</a>
+App made with tasker: <a href="https://taskernet.com/shares/?user=AS35m8lAGpgBQ83OXLWZDvG6p8apkrN%2F1fP55SfSMPnL9nfjqOB6XzKERt34IoSd%2FTwoHVexw1ep&id=Project%3AHribSpot">HribSpot taskernet.com</a>
 
 1. Select mushroom species
 
