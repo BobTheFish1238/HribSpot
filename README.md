@@ -9,7 +9,8 @@ App made with tasker: <a href="https://taskernet.com/shares/?user=AS35m8lAGpgBQ8
 
 3. Wait until location is acquired
 
-4. If the previously saved mushroom needs to be edited (e.g. if you found more mushrooms in same ~20ft area where you already saved the location and want to update the quantity) hold on the "Select Mushroom" title to enter into editing mode OR just save another waypoint
+4. If the previously saved mushroom needs to be edited (e.g. if you found more mushrooms in same ~20ft area where you already saved the location and want to update the quantity) hold on the "Select Mushroom" title to enter into editing mode OR just save another waypoint.<br>
+To delete the previous mushroom, change the "Custom" to blank, "delete", or "dlt"
 
 5. When your finished foraging, click on the file icon and click on the year/month folder and open the GPX file with GaiaGPS<br>
 (waypoint colors must be updated manually in GaiaGPS as it is currently impossible to import gpx files with color)<br>
