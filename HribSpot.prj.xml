@@ -3,8 +3,8 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1772655689845</cdate>
 		<name>HribSpot</name>
-		<scenes>Loading_Screen,BundleAsset scene,MushFP - FILE PICKER UI,Select_Mushroom,Select_Quantity,Mushroom_Results</scenes>
-		<tids>67,174,214,172,175,189,183,29,170,191,212,188,169,210,182,177,161,171,152,196,160,168,70,166,192,213,184,164,190,167,165,173,155,162,176,211,62</tids>
+		<scenes>MushFP - FILE PICKER UI,Mushroom_Results,Select_Quantity,Loading_Screen,BundleAsset scene,Select_Mushroom</scenes>
+		<tids>192,210,167,152,169,211,190,70,174,176,155,166,173,165,164,171,213,160,188,29,67,200,161,184,183,168,214,177,175,162,191,170,172,182,212,189,62</tids>
 		<Kid sr="Kid">
 			<eperm0>android.permission.ACCESS_FINE_LOCATION</eperm0>
 			<eperm1>android.permission.ACCESS_COARSE_LOCATION</eperm1>
@@ -16,7 +16,7 @@
 			<pkg>com.hribspot</pkg>
 			<vTarg>29</vTarg>
 			<vnme>5.0</vnme>
-			<vnum>83</vnum>
+			<vnum>84</vnum>
 		</Kid>
 		<Share sr="Share">
 			<b>false</b>
@@ -136,7 +136,20 @@ Tip: Use the GaiaGPS website to quickly and efficiently change icon colors
 			<Int sr="arg8" val="0"/>
 		</TextElement>
 		<TextElement sr="elements13" ve="3">
-			<clickTask>196</clickTask>
+			<flags>4</flags>
+			<geom>236,463,228,418,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">BundleAssets14</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3">Tasker/tmp/14</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements14" ve="3">
+			<clickTask>200</clickTask>
 			<flags>4</flags>
 			<geom>236,463,228,418,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Table</Str>
@@ -3246,7 +3259,7 @@ startConfetti(3);
 	</Scene>
 	<Scene sr="sceneSelect_Mushroom">
 		<cdate>1772564398797</cdate>
-		<edate>1786601003435</edate>
+		<edate>1786644289049</edate>
 		<gridSize>4</gridSize>
 		<heightLand>-1</heightLand>
 		<heightPort>1333</heightPort>
@@ -3306,7 +3319,7 @@ startConfetti(3);
 		</TextElement>
 		<ListElement sr="elements3">
 			<flags>4</flags>
-			<geom>0,131,785,1019,-1,-1,-1,-1</geom>
+			<geom>0,131,742,1019,-1,-1,-1,-1</geom>
 			<itemclickTask>155</itemclickTask>
 			<itemlongclickTask>152</itemlongclickTask>
 			<Str sr="arg0" ve="3">Menu</Str>
@@ -3368,6 +3381,18 @@ startConfetti(3);
 						<Int sr="arg6" val="0"/>
 						<Int sr="arg7" val="0"/>
 						<Int sr="arg8" val="0"/>
+						<RectElement sr="background">
+							<flags>4</flags>
+							<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+							<Str sr="arg0" ve="3"/>
+							<Int sr="arg1" val="0"/>
+							<Str sr="arg2" ve="3"/>
+							<Str sr="arg3" ve="3"/>
+							<Int sr="arg4" val="0"/>
+							<Str sr="arg5" ve="3">#FF000000</Str>
+							<Int sr="arg6" val="0"/>
+							<Int sr="arg7" val="0"/>
+						</RectElement>
 					</TextElement>
 					<PropertiesElement sr="props">
 						<Int sr="arg0" val="1"/>
@@ -3442,6 +3467,29 @@ startConfetti(3);
 				</Img>
 			</ListElementItem>
 			<ListElementItem sr="item10">
+				<label>Bear's Head</label>
+				<Action sr="action" ve="7">
+					<code>389</code>
+					<Bundle sr="arg0">
+						<Vals sr="val">
+							<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+							<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+						</Vals>
+					</Bundle>
+					<Str sr="arg1" ve="3">%MUSHROOM</Str>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3">Bear's Head</Str>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="3"/>
+					<Int sr="arg7" val="0"/>
+					<Int sr="arg8" val="1"/>
+				</Action>
+				<Img sr="icon" ve="2">
+					<fle>/storage/emulated/0/Tasker/Mushrooms/images/bears-head.png</fle>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item11">
 				<label>Oyster</label>
 				<Action sr="action" ve="7">
 					<code>389</code>
@@ -3464,7 +3512,7 @@ startConfetti(3);
 					<fle>/storage/emulated/0/Tasker/Mushrooms/images/oyster.png</fle>
 				</Img>
 			</ListElementItem>
-			<ListElementItem sr="item11">
+			<ListElementItem sr="item12">
 				<label>COW</label>
 				<Action sr="action" ve="7">
 					<code>389</code>
@@ -3626,29 +3674,6 @@ startConfetti(3);
 				</Img>
 			</ListElementItem>
 			<ListElementItem sr="item8">
-				<label>Reishi</label>
-				<Action sr="action" ve="7">
-					<code>389</code>
-					<Bundle sr="arg0">
-						<Vals sr="val">
-							<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-							<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-						</Vals>
-					</Bundle>
-					<Str sr="arg1" ve="3">%MUSHROOM</Str>
-					<Str sr="arg2" ve="3"/>
-					<Str sr="arg3" ve="3">Reishi</Str>
-					<Str sr="arg4" ve="3"/>
-					<Int sr="arg5" val="0"/>
-					<Int sr="arg6" val="3"/>
-					<Int sr="arg7" val="0"/>
-					<Int sr="arg8" val="1"/>
-				</Action>
-				<Img sr="icon" ve="2">
-					<fle>/storage/emulated/0/Tasker/Mushrooms/images/reishi.png</fle>
-				</Img>
-			</ListElementItem>
-			<ListElementItem sr="item9">
 				<label>Matsutake</label>
 				<Action sr="action" ve="7">
 					<code>389</code>
@@ -3669,6 +3694,29 @@ startConfetti(3);
 				</Action>
 				<Img sr="icon" ve="2">
 					<fle>/storage/emulated/0/Tasker/Mushrooms/images/matsutake.png</fle>
+				</Img>
+			</ListElementItem>
+			<ListElementItem sr="item9">
+				<label>Reishi</label>
+				<Action sr="action" ve="7">
+					<code>389</code>
+					<Bundle sr="arg0">
+						<Vals sr="val">
+							<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""/&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+							<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+						</Vals>
+					</Bundle>
+					<Str sr="arg1" ve="3">%MUSHROOM</Str>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3">Reishi</Str>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="3"/>
+					<Int sr="arg7" val="0"/>
+					<Int sr="arg8" val="1"/>
+				</Action>
+				<Img sr="icon" ve="2">
+					<fle>/storage/emulated/0/Tasker/Mushrooms/images/reishi.png</fle>
 				</Img>
 			</ListElementItem>
 		</ListElement>
@@ -4139,6 +4187,23 @@ startConfetti(3);
 		<Action sr="act10" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%WidgetMushroom</Str>
+			<Str sr="arg1" ve="3">Tasker/Mushrooms/images/bears-head.png</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Bear's Head</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%WidgetMushroom</Str>
 			<Str sr="arg1" ve="3">Tasker/Mushrooms/images/oyster.png</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -4153,7 +4218,7 @@ startConfetti(3);
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act11" ve="7">
+		<Action sr="act12" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%WidgetMushroom</Str>
 			<Str sr="arg1" ve="3">Tasker/Mushrooms/images/chicken-of-the-woods.png</Str>
@@ -4170,7 +4235,7 @@ startConfetti(3);
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act13" ve="7">
 			<code>461</code>
 			<se>false</se>
 			<Bundle sr="arg0">
@@ -4309,23 +4374,6 @@ startConfetti(3);
 		<Action sr="act8" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%WidgetMushroom</Str>
-			<Str sr="arg1" ve="3">Tasker/Mushrooms/images/reishi.png</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%tap_label</lhs>
-					<op>2</op>
-					<rhs>Reishi</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%WidgetMushroom</Str>
 			<Str sr="arg1" ve="3">Tasker/Mushrooms/images/matsutake.png</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -4340,12 +4388,29 @@ startConfetti(3);
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%WidgetMushroom</Str>
+			<Str sr="arg1" ve="3">Tasker/Mushrooms/images/reishi.png</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Reishi</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
 	</Task>
 	<Task sr="task155">
 		<cdate>1772570517417</cdate>
 		<edate>1772570517417</edate>
 		<id>155</id>
-		<pri>112</pri>
+		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
 			<Str sr="arg0" ve="3">Select_Mushroom</Str>
@@ -4378,18 +4443,6 @@ startConfetti(3);
 		</Action>
 		<Action sr="act11" ve="7">
 			<code>776</code>
-			<Str sr="arg0" ve="3">Tasker/Mushrooms/images/reishi.png</Str>
-			<Str sr="arg1" ve="3">%MushroomIcon</Str>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%tap_label</lhs>
-					<op>2</op>
-					<rhs>Reishi</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act12" ve="7">
-			<code>776</code>
 			<Str sr="arg0" ve="3">Tasker/Mushrooms/images/matsutake.png</Str>
 			<Str sr="arg1" ve="3">%MushroomIcon</Str>
 			<ConditionList sr="if">
@@ -4400,7 +4453,31 @@ startConfetti(3);
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act12" ve="7">
+			<code>776</code>
+			<Str sr="arg0" ve="3">Tasker/Mushrooms/images/reishi.png</Str>
+			<Str sr="arg1" ve="3">%MushroomIcon</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Reishi</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
 		<Action sr="act13" ve="7">
+			<code>776</code>
+			<Str sr="arg0" ve="3">Tasker/Mushrooms/images/bears-head.png</Str>
+			<Str sr="arg1" ve="3">%MushroomIcon</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Bear's Head</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="7">
 			<code>776</code>
 			<Str sr="arg0" ve="3">Tasker/Mushrooms/images/oyster.png</Str>
 			<Str sr="arg1" ve="3">%MushroomIcon</Str>
@@ -4412,7 +4489,7 @@ startConfetti(3);
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act14" ve="7">
+		<Action sr="act15" ve="7">
 			<code>776</code>
 			<Str sr="arg0" ve="3">Tasker/Mushrooms/images/chicken-of-the-woods.png</Str>
 			<Str sr="arg1" ve="3">%MushroomIcon</Str>
@@ -4528,7 +4605,7 @@ startConfetti(3);
 		<cdate>1772570935838</cdate>
 		<edate>1772570935838</edate>
 		<id>160</id>
-		<pri>114</pri>
+		<pri>1004</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
 			<Str sr="arg0" ve="3">Select_Quantity</Str>
@@ -4568,7 +4645,7 @@ startConfetti(3);
 		<cdate>1772589036870</cdate>
 		<edate>1772589036870</edate>
 		<id>161</id>
-		<pri>112</pri>
+		<pri>4010</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%customVal</Str>
@@ -4694,7 +4771,7 @@ startConfetti(3);
 		<cdate>1772589117434</cdate>
 		<edate>1772589117434</edate>
 		<id>162</id>
-		<pri>112</pri>
+		<pri>4010</pri>
 		<Action sr="act0" ve="7">
 			<code>195</code>
 			<Str sr="arg0" ve="3">Select_Mushroom</Str>
@@ -5000,7 +5077,7 @@ fi</Str>
 		<cdate>1779753162995</cdate>
 		<edate>1779753162995</edate>
 		<id>164</id>
-		<pri>102</pri>
+		<pri>1002</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">MushFP - PICK FILES UI</Str>
@@ -5125,7 +5202,7 @@ fi</Str>
 		<cdate>1772596039214</cdate>
 		<edate>1772596039214</edate>
 		<id>168</id>
-		<pri>105</pri>
+		<pri>2006</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
 			<Str sr="arg0" ve="3">Mushroom_Results</Str>
@@ -5161,7 +5238,7 @@ fi</Str>
 		<cdate>1772596464911</cdate>
 		<edate>1772596464911</edate>
 		<id>171</id>
-		<pri>1002</pri>
+		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
 			<Str sr="arg0" ve="3">Select_Mushroom</Str>
@@ -5824,10 +5901,10 @@ Seconds Since Epoch&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&
 	</Task>
 	<Task sr="task176">
 		<cdate>1772518756224</cdate>
-		<edate>1786602052010</edate>
+		<edate>1786646774516</edate>
 		<id>176</id>
 		<nme>Pick Mushroom</nme>
-		<pri>1000</pri>
+		<pri>100</pri>
 		<rty>1</rty>
 		<Action sr="act0" ve="7">
 			<code>319</code>
@@ -7549,7 +7626,7 @@ END {
 		<cdate>1780448901050</cdate>
 		<edate>1780448901050</edate>
 		<id>190</id>
-		<pri>105</pri>
+		<pri>2006</pri>
 		<Action sr="act0" ve="7">
 			<code>53</code>
 			<Str sr="arg0" ve="3">Mushroom_Results</Str>
@@ -7562,7 +7639,7 @@ END {
 		<cdate>1780450226098</cdate>
 		<edate>1780450226098</edate>
 		<id>191</id>
-		<pri>110</pri>
+		<pri>2006</pri>
 		<Action sr="act0" ve="7">
 			<code>49</code>
 			<Str sr="arg0" ve="3">Mushroom_Results</Str>
@@ -7598,10 +7675,10 @@ END {
 			<Int sr="arg4" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task196">
+	<Task sr="task200">
 		<cdate>1667562002992</cdate>
 		<edate>1667562002992</edate>
-		<id>196</id>
+		<id>200</id>
 		<Action sr="act0" ve="7">
 			<code>412</code>
 			<Str sr="arg0" ve="3">/sdcard</Str>
@@ -7609,7 +7686,7 @@ END {
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
-			<Str sr="arg5" ve="3">%tmp</Str>
+			<Str sr="arg5" ve="3">Tasker/Mushrooms/images/bears-head.png</Str>
 			<Int sr="arg6" val="1"/>
 		</Action>
 	</Task>
@@ -8039,7 +8116,7 @@ NavigationManager.goBack();</Str>
 		<cdate>1772596464911</cdate>
 		<edate>1772596464911</edate>
 		<id>213</id>
-		<pri>104</pri>
+		<pri>2005</pri>
 		<Action sr="act0" ve="7">
 			<code>123</code>
 			<Str sr="arg0" ve="3">grep -o "&lt;wpt " "$(find /storage/emulated/0/Tasker/Mushrooms -name "*.gpx" | xargs ls -t | head -n 1)" | wc -l</Str>
@@ -8815,7 +8892,7 @@ android.permission.READ_EXTERNAL_STORAGE&lt;/Str&gt;
 	</Task>
 	<Task sr="task62">
 		<cdate>1620684415510</cdate>
-		<edate>1786605096960</edate>
+		<edate>1786646736579</edate>
 		<id>62</id>
 		<nme>BundleAssets</nme>
 		<pri>100</pri>
@@ -11776,7 +11853,7 @@ Selected Index
 	</Task>
 	<Task sr="task67">
 		<cdate>1620687030218</cdate>
-		<edate>1786602100717</edate>
+		<edate>1786644777261</edate>
 		<id>67</id>
 		<nme>ExtractAssets</nme>
 		<pri>100</pri>
