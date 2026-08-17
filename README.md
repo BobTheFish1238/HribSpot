@@ -1,5 +1,5 @@
 # HribSpot
-Quickly save mushroom location, species, and quantity while foraging offline and import into GaiaGPS
+Quickly save mushroom location, species, and quantity while foraging offline and import into GaiaGPS or onX
 
 App made with tasker: <a href="https://taskernet.com/shares/?user=AS35m8lAGpgBQ83OXLWZDvG6p8apkrN%2F1fP55SfSMPnL9nfjqOB6XzKERt34IoSd%2FTwoHVexw1ep&id=Project%3AHribSpot">HribSpot taskernet.com</a>
 
