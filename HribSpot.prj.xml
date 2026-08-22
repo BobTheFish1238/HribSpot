@@ -3,8 +3,8 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1772655689845</cdate>
 		<name>HribSpot</name>
-		<scenes>Select_Mushroom,Loading_Screen,BundleAsset scene,MushFP - FILE PICKER UI,Select_Quantity,Mushroom_Results</scenes>
-		<tids>167,190,188,189,204,192,164,161,174,166,210,171,214,211,172,155,182,213,173,212,168,175,67,176,183,29,177,160,162,170,184,152,169,191,165,70,62</tids>
+		<scenes>Mushroom_Results,Select_Mushroom,BundleAsset scene,Loading_Screen,MushFP - FILE PICKER UI,Select_Quantity</scenes>
+		<tids>171,172,177,212,192,173,152,168,167,190,67,191,70,165,184,211,189,183,162,188,210,174,214,182,176,62,164,124,166,155,161,170,29,213,160,175,169</tids>
 		<Kid sr="Kid">
 			<eperm0>android.permission.ACCESS_FINE_LOCATION</eperm0>
 			<eperm1>android.permission.ACCESS_COARSE_LOCATION</eperm1>
@@ -16,7 +16,7 @@
 			<pkg>com.hribspot</pkg>
 			<vTarg>29</vTarg>
 			<vnme>5.0</vnme>
-			<vnum>85</vnum>
+			<vnum>86</vnum>
 		</Kid>
 		<Share sr="Share">
 			<b>false</b>
@@ -32,7 +32,7 @@
       &lt;section&gt;
         &lt;h4&gt;📝 DESCRIPTION&lt;/h4&gt;
         &lt;p&gt;
-          Quickly save mushroom location, species, and quantity while foraging offline and import into GaiaGPS&lt;br&gt;&lt;br&gt;
+          Quickly save mushroom location, species, and quantity while foraging offline and import into GaiaGPS or onX&lt;br&gt;&lt;br&gt;
 
 App made with tasker: &lt;a href="https://taskernet.com/shares/?user=AS35m8lAGpgBQ83OXLWZDvG6p8apkrN%2F1fP55SfSMPnL9nfjqOB6XzKERt34IoSd%2FTwoHVexw1ep&amp;id=Project%3AHribSpot"&gt;HribSpot taskernet.com&lt;/a&gt;&lt;br&gt;&lt;br&gt;
 
@@ -357,7 +357,7 @@ Tip: Use the GaiaGPS website to quickly and efficiently change icon colors
 			<Int sr="arg8" val="0"/>
 		</TextElement>
 		<TextElement sr="elements29" ve="3">
-			<clickTask>204</clickTask>
+			<clickTask>124</clickTask>
 			<flags>4</flags>
 			<geom>236,463,228,418,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">Table</Str>
@@ -3454,7 +3454,7 @@ startConfetti(3);
 	</Scene>
 	<Scene sr="sceneSelect_Mushroom">
 		<cdate>1772564398797</cdate>
-		<edate>1786991589852</edate>
+		<edate>1787423781391</edate>
 		<gridSize>4</gridSize>
 		<heightLand>-1</heightLand>
 		<heightPort>1333</heightPort>
@@ -4363,6 +4363,21 @@ startConfetti(3);
 			<Str sr="arg7" ve="3"/>
 		</PropertiesElement>
 	</Scene>
+	<Task sr="task124">
+		<cdate>1667562002992</cdate>
+		<edate>1667562002992</edate>
+		<id>124</id>
+		<Action sr="act0" ve="7">
+			<code>412</code>
+			<Str sr="arg0" ve="3">/sdcard</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">Tasker/Mushrooms/images/chicken-of-the-woods.png</Str>
+			<Int sr="arg6" val="1"/>
+		</Action>
+	</Task>
 	<Task sr="task152">
 		<cdate>1772740959113</cdate>
 		<edate>1772740959113</edate>
@@ -7922,21 +7937,6 @@ END {
 			<Int sr="arg4" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task204">
-		<cdate>1667562002992</cdate>
-		<edate>1667562002992</edate>
-		<id>204</id>
-		<Action sr="act0" ve="7">
-			<code>412</code>
-			<Str sr="arg0" ve="3">/sdcard</Str>
-			<Str sr="arg1" ve="3"/>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Str sr="arg5" ve="3">Tasker/Mushrooms/images/admirable-bolete.png</Str>
-			<Int sr="arg6" val="1"/>
-		</Action>
-	</Task>
 	<Task sr="task210">
 		<cdate>1742815022140</cdate>
 		<edate>1742815022140</edate>
@@ -9139,7 +9139,7 @@ android.permission.READ_EXTERNAL_STORAGE&lt;/Str&gt;
 	</Task>
 	<Task sr="task62">
 		<cdate>1620684415510</cdate>
-		<edate>1786992117455</edate>
+		<edate>1787423857460</edate>
 		<id>62</id>
 		<nme>BundleAssets</nme>
 		<pri>100</pri>
